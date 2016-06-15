@@ -29,7 +29,7 @@ function! NERDTreeGrep()
 
     try
         exec 'silent cd ' . dirnode.path.str()
-        exec 'silent ack -rn ' . pattern . ' .'
+        exec 'silent Ack -rn ' . pattern . ' .'
         " exec 'silent ack -rn ' . pattern . ' ' . dirnode.path.str()
     finally
         let &shellpipe = old_shellpipe
